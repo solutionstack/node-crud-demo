@@ -1,0 +1,19 @@
+{
+  "name": "redis-nodejs-crud-demo",
+  "version": "1.0.0",
+  "description": "NodeJs & Redis CRUD",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "keywords": [
+    "NodeJS",
+    "Redis"
+  ],
+  "author": "Olubodun Agbalaya",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.2",
+    "redis": "^2.8.0"
+  }
+}
