@@ -11,7 +11,11 @@
  POST /api/add/:key/:value => creates a new key-value pair
  ```
  ```
- POST /api/update/:key/:value => Update Value at Key entry, if it EXISTS
+ GET /api/read/:key => Read in-memory value, stored with key (IF EXISTS)
+ ```
+
+ ```
+ POST /api/update/:key/:value => Update Value at Key entry, (IF EXISTS)
  ```
  ```
  POST /api/delete/:key => Delete entry at Key, if it EXISTS
@@ -25,7 +29,7 @@ npm install
 ```
 > Make sure redis server is running in the background, get it here https://redis.io/download
 
-run
+> run
 ```
 node app.js
 ```

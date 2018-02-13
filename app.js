@@ -63,7 +63,7 @@ app.get('/', (req, res)=> {
 ;
 
 // create  data
-app.get('/api/add/:key/:value', (req, res) => {
+app.post('/api/add/:key/:value', (req, res) => {
 
     let data_key = req.params.key;
 const new_data ={};
@@ -119,7 +119,7 @@ app.get('/api/read/:key', (req, res) => {
 ;
 
 // update cached data
-app.get('/api/update/:key/:value', (req, res) => {
+app.post('/api/update/:key/:value', (req, res) => {
 
     client.hgetall("demo-app-db", (err, result)=> {
 
@@ -167,7 +167,7 @@ app.get('/api/update/:key/:value', (req, res) => {
 
 })
 ;// delete cached data
-app.get('/api/delete/:key', (req, res) => {
+app.post('/api/delete/:key', (req, res) => {
 
     client.hgetall("demo-app-db", (err, result)=> {
 
