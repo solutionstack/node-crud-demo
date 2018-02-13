@@ -16,3 +16,18 @@
  ```
  POST /api/delete/:key => Delete entry at Key, if it EXISTS
  ```
+
+## Installation
+
+> run in the project folder
+```
+npm install
+```
+> Make sure redis server is running in the background, get it here https://redis.io/download
+
+run
+```
+node app.js
+```
+> Visit http://localhost:8081
+
